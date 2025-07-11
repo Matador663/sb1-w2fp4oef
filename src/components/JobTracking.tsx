@@ -278,7 +278,7 @@ const JobTracking: React.FC = () => {
                     {new Date(collab.date).toLocaleDateString('tr-TR')}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    {collab.fee.toLocaleString('tr-TR')} ₺
+                    {(collab.fee || 0).toLocaleString('tr-TR')} ₺
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     {collab.collaboration_count}

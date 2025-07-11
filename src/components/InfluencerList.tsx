@@ -226,7 +226,7 @@ const InfluencerList: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Ücret</p>
-                    <p className="font-semibold">{influencer.fee.toLocaleString('tr-TR')} ₺</p>
+                    <p className="font-semibold">{(influencer.fee || 0).toLocaleString('tr-TR')} ₺</p>
                   </div>
                   <div>
                     <span className={`text-xs px-2 py-1 rounded-full ${getStatusColor(influencer.status)}`}>
